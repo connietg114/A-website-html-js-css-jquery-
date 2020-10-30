@@ -1,0 +1,157 @@
+<!--Top Navigation Bar-->
+<div class="topnavWrapper">
+    <div class="topnav" id="myTopnav">  
+        <img class='active' id="logo" src="img/Logo.png" onclick="showPage('?home')" filename="home.html"style="cursor:pointer" alt="profile" >
+        <a id="menu-icon" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img id ="menuIcon" src="img/menubut.PNG"></img>
+        </a>             
+        <div id="myMenu"class="menu-content"><!--display:inline-block to make everything align on the same line-->               
+            <div class="cornerBlock"><!--also need to remove style="overflow:auto"-->
+                <a class="cnButton" id="languageButton"onclick="showPage('?cn')" style="margin-top:-3px" filename="?cn.html">中文版</a>
+                <a id="login">Login</a>
+                <a class="phone" href="tel:022-381-7661"><i class="fa fa-phone"></i>&nbsp;022-381-7661</a>
+            </div>
+            <a class="navButton" onclick="showPage('?contactus')" id="contactUs" filename="contactus.html">Contact Us</a>
+            <a class="navButton" onclick="showPage('?faq')" id="faq" filename="faq.html">FAQ</a>
+            <a class="navButton" onclick="showPage('?whychooseus')" id="whyChooseUs" filename="whychooseus.html">Why Choose Us</a>
+            
+            <div class="dropdown" id="ourServices">
+                <button style="text-transform: uppercase;" onclick="serviceDropdownMenu()" class="dropbtn" id="ourServicesButton">Our Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="navButton" onclick="showPage('?inbound')" id="inbound"filename="inbound.html">Inbound</a>
+                        <a class="navButton" onclick="showPage('?outbound')" id="outbound"filename="outbound.html">Outbound</a>
+                        <a class="navButton" onclick="showPage('?helpdesk')" id="helpdesk"filename="helpdesk.html">Helpdesk</a>
+                        <a class="navButton" onclick="showPage('?backendoffice')" id="backEndOffice"filename="backendoffice.html">Back end office</a>
+                    </div>
+            </div> 
+
+            <a class="navButton" onclick="showPage('?howitworks')" id='howItWorks' filename="howitworks.html">How it works</a>
+            <a class="navButton" onclick="showPage('?aboutus')" id="aboutUs" filename="aboutus.html">About us</a>   
+        </div>
+    </div>
+</div>
+<!--Modal
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe frameBorder="0" id='popUpContent'src=''></iframe>
+    </div>
+</div>-->
+
+<!--Banner-->
+<div class='main'>
+    <div class ="bannerClass"id="banner">
+        <script type="text/javascript">
+            loadContent();
+        </script>
+        <div class="bannertext">
+            
+            <h1 class="bannertextTitle">Call Centre Services</h1>
+            <p class="bannertextContent">Are your calls overflowing? Is your business making the most of each and every enquiry, both day and night? Our call centre services are open 24/7, offering a welcoming, friendly and professional team to handle your business enquiry, whatever the call volumes.<br/><br/>
+            Let Answers enhance your company image, maximise call capture and increase customer satisfaction. We’re simply there when the phone rings, every time.
+            </p>
+        </div>
+    </div>
+<div/>
+
+<!--Who we are, What we do, How we work-->
+<div class="mainMenu" id="mainMenu" style="width:100%">
+    <div class="row">
+
+        <!--Who we are-->
+        <div class="col"id="whoWeAre" style="margin-left:auto">
+            <div class="colContent">  
+                <img id="whoWoAreLogo" src="img/whoweare.PNG"></img>
+                <p id="whoWeAreTitle"><strong>WHO WE ARE</strong></p>
+                <p id="whoWeAreText">
+                    CC is your call center managed by people who have over 30 years of combined experience...
+                </p>
+                <span>
+                    <button class="wwhButton"style="float:right"id="whoWeAreButton" pId="whoWeAreText" onclick="addText(id)">More</button>
+                </span>
+                
+            </div>    
+        </div>
+        <!--What we do-->
+        <div class="col" id="whatWeDo">
+            <div class="colContent">
+                <img id="whatWeDoLogo" src="img/whatwedo.PNG"></img>
+                <p id="whatWeDoTitle"><strong>WHAT WE DO</strong></p>
+                <p id="whatWeDoText">
+                    We bring to you your very own contact center providing core support to your business... 
+                </p>
+                <span>
+                    <button class="wwhButton"style="float:right"id="whatWeDoButton" pId="whatWeDoText"onclick="addText(id)">More</button>
+                </span>
+                
+            </div>    
+        </div>
+        <!--How we work-->
+        <div class="col" id="howWeWork"style="margin-right:auto">
+            <div class="colContent">
+                <img id="howWeWorkLogo" src="img/howwework.PNG"></img>
+                <p id="howWeWorkTitle"><strong>HOW WE WORK</strong></p>
+                <p id="howWeWorkText">
+                    We make it really simple for you. Just follow the process...
+                </p>
+                <span>
+                    <button class="wwhButton"style="float:right"id="howWeWorkButton" pId="howWeWorkText"onclick="addText(id)">More</button>
+                </span>
+                
+            </div>    
+        </div>   
+    </div>
+</div>
+
+<!--Footer-->
+<div class="footer" id="footer" style="width:100%">
+    <div class="footer-row">
+        <div class="footer-column" style="width:35%">
+            <img src="img/greylogo.png" style="margin:0;width:70px;float:left"/>
+            <div class="footerLogoText" style="">Virtual Connections Limited</div>
+        </div>
+        <div class="footer-column" style="width:65%">
+            <strong id="leaveMessageTitle">LEAVE A MESSAGE TO US </strong>
+            <br><br>
+            <form action="https://formspree.io/xwkwkbel" method="POST"class="form">
+                <div class="label">
+                    <strong id="nameTitle">NAME</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="Sender" class="input">
+                </div>                    
+                
+                <div class="label">
+                    <strong id="phoneTitle">PHONE</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="phone" class="input">
+                </div>
+
+                <div class="label">
+                    <strong id="emailTitle">EMAIL</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="From" class="email">
+                </div>
+                <br>
+                <div class="message" style="display:inline-block;position:relative;">
+                    <strong id="messageTitle">MESSAGE</strong>
+                    <br><br>
+                    <div>
+                        <textarea class="messageTextarea" name="Message"></textarea>
+                    </div>
+                    
+                    <input id="sendMessageButton" type="submit" value="Send Message" class="button">
+                    
+                </div>
+
+            </form>
+            <br><br>
+            <div>
+                
+            </div>      
+        </div>
+        <br><br>
+        <div class="copyright">
+            <hr/>
+            <p id="copyrightText">Copyright©2018. Powered by CallCentre Limited</p>
+        </div>
+    </div>
+</div> 

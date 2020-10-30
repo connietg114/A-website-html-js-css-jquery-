@@ -1,0 +1,150 @@
+<!--Top Navigation Bar-->
+<div class="topnavWrapper">
+    <div class="topnav" id="myTopnav">  
+        <img class='active' id="logo" src="img/Logo.png" onclick="showPage('?cn&home')" filename=".html"style="cursor:pointer" alt="profile" >
+        <a id="menu-icon" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img id ="menuIcon" src="img/menubut.PNG"></img>
+        </a>             
+        <div id="myMenu"class="menu-content"><!--display:inline-block to make everything align on the same line-->               
+            <div class="cornerBlock"><!--also need to remove style="overflow:auto"-->
+                <a style="margin-top:2px" class="enButton" id="languageButton" onclick="showPage('?')" filename=".html">English</a>
+
+                <a id="login">登陆</a>
+                <a href="tel:022-381-7661" style="margin-top:2px"><i class="fa fa-phone"></i>&nbsp;022-381-7661</a>
+            </div>
+        <a class="navButton" onclick="showPage('?cn&contactus')" id="contactUs" filename="contactus.html">联系我们</a>
+        <a class="navButton" onclick="showPage('?cn&faq')" id="faq" filename="faq.html">常问问题</a>
+        <a class="navButton" onclick="showPage('?cn&whychooseus')" id="whyChooseUs" filename="whychooseus.html">为什么选择我们</a>
+        
+        <div class="dropdown" id="ourServices">
+            <button onclick="serviceDropdownMenu()" class="dropbtn" id="ourServicesButton">我们的服务
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a class="navButton" onclick="showPage('?cn&inbound')" id="inbound"filename="inbound.html">入站</a>
+                <a class="navButton" onclick="showPage('?cn&outbound')" id="outbound"filename="outbound.html">出站</a>
+                <a class="navButton" onclick="showPage('?cn&helpdesk')" id="helpdesk"filename="helpdesk.html">服务台</a>
+                <a class="navButton" onclick="showPage('?backendoffice')" id="backEndOffice"filename="backendoffice.html">后台办公室</a>
+            </div>
+        </div> 
+
+        <a class="navButton" onclick="showPage('?cn&howitworks')" id='howItWorks' filename="howitworks.html">怎么运行的</a>
+        <a class="navButton" onclick="showPage('?cn&aboutus')" id="aboutUs" filename="aboutus.html">关于我们</a>   
+        </div>
+     </div>
+</div>
+
+<!--Banner-->
+<div class='main'>
+    <div class ="bannerClass"id="banner">
+        <script type="text/javascript">
+                loadContent();
+        </script>
+        <div class="bannertext">
+            <h1 class="bannertextTitle">呼叫中心服务</h1>
+            <p class="bannertextContent">您的电话溢出了吗？您的企业是否在白天和黑夜都充分利用每一个询问？我们的呼叫中心服务全天候24/7全天候开放，为您提供热情，友好和专业的团队来处理您的业务咨询（无论呼叫量如何）。
+            <br/><br/>让答案增强您的公司形象，最大程度地捕获电话并提高客户满意度。每当电话响时，我们就在那里。
+            </p>
+        </div>
+    </div>
+<div/>
+
+<!--Who we are, What we do, How we work-->
+<div class="mainMenu" id="mainMenu" style="width:100%">
+    <div class="row">
+
+        <!--Who we are-->
+        <div class="col"id="whoWeAre" style="margin-left:auto">
+            <div class="colContent">  
+                <img id="whoWoAreLogo" src="img/whoweare.PNG"></img>
+                <p id="whoWeAreTitle"><strong>我们是谁</strong></p>
+                <p id="whoWeAreText">
+                    CC是您的呼叫中心，由拥有30多年综合经验的人员管理...
+                </p>
+                <span>
+                    <button class="wwhButton"style="float:right"id="whoWeAreButton" pId="whoWeAreText" onclick="addText(id)">更多</button>
+                </span>
+                
+            </div>    
+        </div>
+        <!--What we do-->
+        <div class="col" id="whatWeDo">
+            <div class="colContent">
+                <img id="whatWeDoLogo" src="img/whatwedo.PNG"></img>
+                <p id="whatWeDoTitle"><strong>我们所做的</strong></p>
+                <p id="whatWeDoText">
+                    我们为您带来自己的联络中心，为您的业务提供核心支持...
+                </p>
+                <span>
+                    <button class="wwhButton"style="float:right"id="whatWeDoButton" pId="whatWeDoText"onclick="addText(id)">更多</button>
+                </span>
+                
+            </div>    
+        </div>
+        <!--How we work-->
+        <div class="col" id="howWeWork"style="margin-right:auto">
+            <div class="colContent">
+                <img id="howWeWorkLogo" src="img/howwework.PNG"></img>
+                <p id="howWeWorkTitle"><strong>我们如何运作</strong></p>
+                <p id="howWeWorkText">
+                    我们为您简化了这一过程。只需按照流程...
+                </p>
+                <span>
+                    <button class="wwhButton"style="float:right"id="howWeWorkButton" pId="howWeWorkText"onclick="addText(id)">更多x</button>
+                </span>
+                
+            </div>    
+        </div>   
+    </div>
+</div>
+        
+        <!--Footer-->
+<div class="footer" id="footer" style="width:100%">
+    <div class="footer-row">
+        <div class="footer-column" style="width:35%">
+            <img src="img/greylogo.png" style="margin:0;width:70px;float:left"/>
+            <div class="footerLogoText" style="">Virtual Connections Limited</div>
+        </div>
+        <div class="footer-column" style="width:65%">
+            <strong id="leaveMessageTitle">给我们留言 </strong>
+            <br><br>
+            <form action="https://formspree.io/xwkwkbel" method="POST"class="form">
+                <div class="label">
+                    <strong id="nameTitle">名字</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="Sender" class="input">
+                </div>                    
+                
+                <div class="label">
+                    <strong id="phoneTitle">电话</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="phone" class="input">
+                </div>
+
+                <div class="label">
+                    <strong id="emailTitle">邮件</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="From" class="email">
+                </div>
+                <br>
+                <div class="message" style="display:inline-block;position:relative;">
+                    <strong id="messageTitle">信息</strong>
+                    <br><br>
+                    <div>
+                        <textarea class="messageTextarea" name="Message"></textarea>
+                    </div>
+                    
+                    <input id="sendMessageButton" type="submit" value="发送信息" class="button">
+                    
+                </div>
+
+            </form>
+            <br><br>
+            <div>
+                
+            </div>      
+        </div>
+        <br><br>
+        <div class="copyright">
+            <hr/>
+            <p id="copyrightText">版权所有©2018. 由CallCentre Limited供电</p>
+        </div>
+    </div>
+</div> 

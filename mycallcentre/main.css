@@ -1,0 +1,76 @@
+.main {
+    width: 100%;
+    margin-top: 160px;
+  }
+
+#banner{
+  width:100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:50px;
+  overflow: hidden;
+  /* margin-bottom:100px; */
+  display: none;
+}
+  
+.bannertext{
+  width:55%;
+  padding:30px;
+  float: right;/*need to use with overflow hidden in parent div*/
+  /* margin-left: auto; */
+  color:#FFF; 
+  font-size:15px; 
+  text-shadow:3px 3px 8px #000;
+  /* border: 5px solid black; */
+ 
+
+}
+.bannertextTitle{
+  font-size:60px;
+  font-weight:bolder}
+.bannertextContent{
+  font-size: 20px;
+}
+@media screen and (max-width: 1000px)and (min-width: 801px) {
+  #banner{
+    padding: 30px;
+  }
+  .main{
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 800px)and (min-width: 401px) {
+  #banner{
+    padding: 20px;
+  }
+  .bannerClass .bannertext{
+    width: 100%; 
+  }
+  .bannerClass .bannertextTitle{
+    font-size:40px;}
+
+  .bannertextContent{
+    font-size: 20px;
+  }
+  .main{
+    margin-top: 130px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #banner{
+    padding: 10px;
+  }
+  .bannerClass .bannertext{
+    width: 100%;
+    
+  }
+  .bannerClass .bannertextTitle{
+    font-size:25px;}
+
+  .bannertextContent{
+    font-size: 18px;
+  }
+  .main{
+    margin-top: 80px;
+  }
+}

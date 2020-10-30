@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .howItWorksColumn {
+    float: left;
+    padding: 10px;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .howItWorksRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .howItWorksImg{
+    width: 80%;
+  }
+  @media screen and (max-width: 800px) {
+    .howItWorksRow{
+      display: block;}
+    .howItWorksColumn{
+      width:100%;}
+
+    
+  }
+
+  .contactUsColumn {
+    float: left;
+    padding: 10px;
+  }
+  #contactUsColumn1{
+    width: 40%;
+  }
+  #contactUsColumn2{
+    width: 60%;
+  }
+
+  
+  /* Clear floats after the columns */
+  .contactUsRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 800px) {
+    .contactUsRow{
+      display:block;}
+      #contactUsColumn1{
+        width: 100%;
+      }
+      #contactUsColumn2{
+        width: 100%;
+      }
+    
+  }
+  
+  
+
+  .faqAns{
+    margin-left:2%; 
+    margin-right:2%;
+    font-style: italic;
+  }

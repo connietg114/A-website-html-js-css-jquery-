@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bow Length Intern Project</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="stylesheet" href="topnav.css" type="text/css">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="main-menu.css" type="text/css">
+        <link rel="stylesheet" href="footer.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <script>
+        $(function(){    
+            $( "#whoWoAreLogo" ).hover(function() {
+                $( this ).fadeOut( 100 ).fadeIn( 500 );
+            });
+            $( "#whatWeDoLogo" ).hover(function() {
+                $( this ).fadeOut( 100 ).fadeIn( 500 );
+            });
+            $( "#howWeWorkLogo" ).hover(function() {
+                $( this ).fadeOut( 100 ).fadeIn( 500 );
+            });
+
+            $("#menu-icon").click(function(){
+                alert("menu-click");
+            });
+           
+        });      
+    </script>
+
+    <body style="background-image: url('img/banner.jpg'); z-index:-1; background-color: rgba(255,255,255,0.6);">
+        <div class="mycallcenter">
+        </div>  
+    </body>
+</html>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } 
+        else {
+            x.className = "topnav";
+        }
+    }
+</script>
